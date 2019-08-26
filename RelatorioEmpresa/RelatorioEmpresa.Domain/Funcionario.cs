@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RelatorioEmpresa.Domain
 {
-    public class Funcionario
+    public class FuncionarioRepository
     {
         [Key]
         public int Id { get; set; }
@@ -22,7 +22,7 @@ namespace RelatorioEmpresa.Domain
 
         public DateTime Fim { get; set; }
 
-
+        public IEnumerable<FuncionarioRepository> ListaAndares { get; set; }
 
     }
 }
